@@ -26,7 +26,16 @@ private int contador;
 	
 		
 	public String toString() {
-		return Arrays.toString(alumnos);
+		
+		String devolver = "Aula [";
+		
+		for(int i =0;i<contador-1;i++) {
+			devolver += alumnos[i]+", ";
+		}
+		devolver += alumnos[contador-1]+"]";
+		
+		return devolver;
+		
 	}
 
 
