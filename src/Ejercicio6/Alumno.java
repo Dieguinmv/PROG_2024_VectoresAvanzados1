@@ -36,8 +36,26 @@ public class Alumno {
 		
 	}
 	
+	public float getMedia(Asignaturas[] asignaturas) {
+		
+		float suma = 0;
+		
+		if(calificaciones.length >0) {
+			
+			for(int i=0;i< calificaciones.length;i++) {
+				suma+= asignaturas[i].getEV1();
+			}
+			
+			return suma/calificaciones.length;
+		}
+		
+		return 0;
+	}
 	
 	
+	public Asignaturas[] getCalificaciones() {
+		return calificaciones;
+	}
 	
 	
 	public String toString() {

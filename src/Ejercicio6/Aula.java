@@ -14,6 +14,9 @@ private int contador;
 	}
 		
 	
+	
+	
+	
 	public void añadirAlumnos(Alumno alumno) {
 		
 		if(contador<alumnos.length) {
@@ -24,6 +27,26 @@ private int contador;
 		
 	}
 	
+	public float getMedia1V() {
+		
+		float suma = 0;
+		
+		for(int i=0;i<contador;i++) {
+			
+			Asignaturas[] calificaciones = alumnos[i].getCalificaciones();
+			float mediaAlumno = alumnos[i].getMedia(calificaciones);
+			
+			if(mediaAlumno> 0) {
+				suma+= mediaAlumno;
+			}
+			
+		}
+		
+		return suma/contador;
+		
+		
+		
+	}
 		
 	public String toString() {
 		

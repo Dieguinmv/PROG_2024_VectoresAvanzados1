@@ -39,7 +39,7 @@ public class Start {
 
 		
 		System.out.println(aula);
-		
+		System.out.println("La media de todos los alumnos de la Primera Evaluacion--->"+aula.getMedia1V());
 		
 	}
 
