@@ -1,26 +1,48 @@
 package Ejercicio6;
 
+import java.util.Arrays;
+
 public class Alumno {
 
 	private String nombre;
 	private String apellido;
 	private int telefono;
 	private Asignaturas calificaciones[];
+	private int contador;
 	
 	public Alumno(String nombre,String apellido) {
 		
 		this.nombre = nombre;
 		this.apellido = apellido;
 		calificaciones = new Asignaturas[4];
+		contador = 0;
+	}
+	
+	public void añadirAsig(Asignaturas asignatura) {
+		
+		
+		
+		if(contador<calificaciones.length) {
+			
+			if((asignatura.getEV1()>0 && asignatura.getEV2()>0 && asignatura.getEV3()>0)&&
+					(asignatura.getEV1()<=10 && asignatura.getEV2()<=10 && asignatura.getEV3()<=10)) {
+				
+				calificaciones[contador] = asignatura;
+				contador++;
+			}
+			
+		}
+		
 		
 	}
 	
 	
 	
 	
+	
 	public String toString() {
 		
-		return "["+nombre+","+apellido+","+calificaciones+"]";
+		return "["+nombre+","+apellido+","+"Calificaciones-->"+Arrays.toString(calificaciones)+"]";
 		
 	}
 
