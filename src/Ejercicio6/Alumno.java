@@ -18,7 +18,7 @@ public class Alumno {
 		contador = 0;
 	}
 	
-	public void añadirAsig(Asignaturas asignatura) {
+	public void addAsig(Asignaturas asignatura) {
 		
 		
 		
