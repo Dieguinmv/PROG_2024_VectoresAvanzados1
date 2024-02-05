@@ -50,10 +50,10 @@ private int contador;
 		
 	public String toString() {
 		
-		String devolver = "Aula [";
+		String devolver = "\n"+"Aula [";
 		
 		for(int i =0;i<contador-1;i++) {
-			devolver += alumnos[i]+", ";
+			devolver += "\n"+alumnos[i]+", \n";
 		}
 		devolver += alumnos[contador-1]+"]";
 		

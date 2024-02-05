@@ -10,10 +10,9 @@ public class Alumno {
 	private Asignaturas calificaciones[];
 	private int contador;
 	
-	public Alumno(String nombre,String apellido) {
+	public Alumno(String nombre) {
 		
 		this.nombre = nombre;
-		this.apellido = apellido;
 		calificaciones = new Asignaturas[4];
 		contador = 0;
 	}
@@ -60,7 +59,7 @@ public class Alumno {
 	
 	public String toString() {
 		
-		return "["+nombre+","+apellido+","+"Calificaciones-->"+Arrays.toString(calificaciones)+"]";
+		return "["+"{"+nombre+"}"+"\n"+"Calificaciones"+Arrays.toString(calificaciones)+"]";
 		
 	}
 

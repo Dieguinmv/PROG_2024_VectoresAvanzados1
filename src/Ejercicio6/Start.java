@@ -7,8 +7,8 @@ public class Start {
 		
 		Aula aula = new Aula();
 		
-		Alumno alumno1 = new Alumno("Diego","Montes");
-		Alumno alumno2 = new Alumno("Lorena","Rodriguez");
+		Alumno alumno1 = new Alumno("Diego");
+		Alumno alumno2 = new Alumno("Lorena");
 		
 		aula.añadirAlumnos(alumno1);
 		aula.añadirAlumnos(alumno2);
@@ -39,7 +39,7 @@ public class Start {
 
 		
 		System.out.println(aula);
-		System.out.println("La media de todos los alumnos de la Primera Evaluacion--->"+aula.getMedia1V());
+		System.out.println("\n"+"La media de todos los alumnos de la Primera Evaluacion--->"+"{"+aula.getMedia1V()+"}");
 		
 	}
 
